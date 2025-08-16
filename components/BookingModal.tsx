@@ -251,7 +251,10 @@ Additional Message: ${formData.message}`,
                           mode="single"
                           selected={endDate}
                           onSelect={setEndDate}
-                          initialFocus
+                          className="rounded-lg"
+                          classNames={{
+                            today: ""
+                          }}
                           disabled={(date) => !startDate || date <= startDate}
                         />
                       </PopoverContent>
