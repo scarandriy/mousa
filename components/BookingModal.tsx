@@ -184,7 +184,7 @@ Additional Message: ${formData.message}`,
           </div>
 
           {/* Right Panel - Booking Form */}
-          <div className="p-8 lg:p-12 pt-20 ">
+          <div className="p-8 lg:p-12  ">
             <div className="space-y-6 ">
               <div>
                 <DialogTitle className="font-display text-2xl mb-2">Book This Vehicle</DialogTitle>
