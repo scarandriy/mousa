@@ -127,10 +127,10 @@ Additional Message: ${formData.message}`,
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0 border-0 shadow-2xl bg-background/85 backdrop-blur-md ">
+      <DialogContent className="w-full h-full md:w-auto md:h-auto md:max-w-4xl md:max-h-[90vh] overflow-y-auto p-0 border-0 shadow-2xl bg-background/85 backdrop-blur-md rounded-none md:rounded-lg">
         <div className="grid lg:grid-cols-2 min-h-[600px]">
           {/* Left Panel - Car Details */}
-          <div className="p-8 lg:p-12 border-r border-border">
+          <div className="p-8 lg:p-12 sm:pt-12 pt-20 border-r border-border">
             <div className="space-y-8">
               {/* Car Image */}
               <div className="relative group">
@@ -184,8 +184,8 @@ Additional Message: ${formData.message}`,
           </div>
 
           {/* Right Panel - Booking Form */}
-          <div className="p-8 lg:p-12 ">
-            <div className="space-y-6">
+          <div className="p-8 lg:p-12 pt-20 ">
+            <div className="space-y-6 ">
               <div>
                 <DialogTitle className="font-display text-2xl mb-2">Book This Vehicle</DialogTitle>
                 <DialogDescription className="text-muted-foreground">
